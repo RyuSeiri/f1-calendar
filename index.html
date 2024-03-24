@@ -1,36 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>F1 Calendar</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <h1>F1 Calendar</h1>
-    <div>
-      <label for="language">Language:</label>
-      <select id="language">
-        <option value="en">English</option>
-        <option value="es">Español</option>
-        <option value="fr">Français</option>
-      </select>
-    </div>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>F1 Calendar</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-R3GQ1PR6CF"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  <main>
-    <table id="calendar"></table>
-  </main>
+      gtag("config", "G-R3GQ1PR6CF");
+    </script>
+  </head>
+  <body>
+    <header>
+      <h1>F1 Calendar</h1>
+      <div>
+        <label for="language">Language:</label>
+        <select id="language">
+          <option value="en">English</option>
+          <option value="es">Español</option>
+          <option value="fr">Français</option>
+        </select>
+      </div>
+    </header>
 
-  <footer>
-    <form id="subscribeForm">
-      <input type="email" id="emailInput" placeholder="Enter your email" required>
-      <button type="submit">Subscribe</button>
-    </form>
-  </footer>
+    <main>
+      <table id="calendar"></table>
+    </main>
 
-  <script src="translations.js"></script>
-  <script src="script.js"></script>
-</body>
+    <footer>
+      <form id="subscribeForm">
+        <input
+          type="email"
+          id="emailInput"
+          placeholder="Enter your email"
+          required
+        />
+        <button type="submit">Subscribe</button>
+      </form>
+    </footer>
+
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>
