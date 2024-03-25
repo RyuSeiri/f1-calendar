@@ -174,7 +174,7 @@ main {
 
 @media screen and (max-width: 768px) {
   main {
-    padding: 8px;
+    padding: 10px;
   }
 
   .race-container {
@@ -201,7 +201,8 @@ main {
   }
 
   .race .event {
-    width: 130px;
+    width: 115px;
+    white-space: nowrap;
   }
 
   .race .day {
