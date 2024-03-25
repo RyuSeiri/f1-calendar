@@ -3,8 +3,44 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>F1 Calendar</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>F1 Calendar - FN123</title>
+    <meta name="keywords" content="f1calendar,f1,calendar" />
+    <meta
+      name="description"
+      content="F1-Calendar is your ultimate destination for Formula 1 racing events. Stay updated with race schedules, track details, team information, and more. Never miss a thrilling moment of the F1 season again."
+    />
+    <meta name="author" content="FNS 123" />
+    <link rel="canonical" href="https://f1-calendar.eu.org/" />
+    <link rel="icon" href="https://f1-calendar.eu.org/logo.png" />
+    <meta name="theme-color" content="#121212" />
+    <meta name="msapplication-TileColor" content="#121212" />
+    <meta property="og:title" content="F1 Calendar - FNS 123" />
+    <meta
+      property="og:description"
+      content="F1-Calendar is your ultimate destination for Formula 1 racing events. Stay updated with race schedules, track details, team information, and more. Never miss a thrilling moment of the F1 season again."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://f1-calendar.eu.org/" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="F1 Calendar - FNS 123" />
+    <meta
+      name="twitter:description"
+      content="F1-Calendar is your ultimate destination for Formula 1 racing events. Stay updated with race schedules, track details, team information, and more. Never miss a thrilling moment of the F1 season again."
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "F1 Calendar - FNS 123",
+        "url": "https://f1-calendar.eu.org/",
+        "description": "F1-Calendar is your ultimate destination for Formula 1 racing events. Stay updated with race schedules, track details, team information, and more. Never miss a thrilling moment of the F1 season again.",
+        "thumbnailUrl": "https://f1-calendar.eu.org/favicon.ico",
+        "sameAs": []
+      }
+    </script>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <script src="./assets/js/translations.js"></script>
+    <script src="./assets/js/script.js"></script>
     <!-- Google tag (gtag.js) -->
     <script
       async
@@ -16,40 +52,32 @@
         dataLayer.push(arguments);
       }
       gtag("js", new Date());
-
       gtag("config", "G-R3GQ1PR6CF");
     </script>
   </head>
   <body>
     <header>
       <h1>F1 Calendar</h1>
-      <div>
+      <!-- <div>
         <label for="language">Language:</label>
         <select id="language">
           <option value="en">English</option>
           <option value="es">Español</option>
           <option value="fr">Français</option>
         </select>
-      </div>
+      </div> -->
     </header>
-
     <main>
-      <table id="calendar"></table>
+      <div id="calendar" class="race-container"></div>
     </main>
-
     <footer>
-      <form id="subscribeForm">
-        <input
-          type="email"
-          id="emailInput"
-          placeholder="Enter your email"
-          required
-        />
-        <button type="submit">Subscribe</button>
-      </form>
+      <div class="footer-container">
+        <p>© 2024 All Rights Reserved</p>
+        <p>
+          <a href="#">Privacy Policy</a> |
+          <a href="#">About Us</a>
+        </p>
+      </div>
     </footer>
-
-    <script src="translations.js"></script>
-    <script src="script.js"></script>
   </body>
 </html>
