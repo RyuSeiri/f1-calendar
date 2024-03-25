@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       </h3>
       <div class="race-content">
         <div class="race-image">
-          <img src="./assets/track-icons/${data.id}.png"/>
+          <img src="./assets/track-icons/${data.id}.png" alt="${data.name} Track" />
         </div>
         <div class="race-times">
           ${Object.keys(data)

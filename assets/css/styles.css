@@ -1,7 +1,11 @@
 @font-face {
   font-family: "f1";
-  src: url("https://www.formula1.com/etc/designs/fom-website/fonts/F1Regular/Formula1-Regular.ttf")
-    format("truetype"); /* Safari, Android, iOS */
+  src: url("../font/Formula1-Regular.ttf") format("truetype");
+}
+
+html {
+  overflow-x: hidden;
+  font-size: 10px;
 }
 
 body {
@@ -39,7 +43,7 @@ footer {
   color: #f2f2f2;
 }
 
-.footer-container a{
+.footer-container a {
   color: #f2f2f2;
 }
 
@@ -51,28 +55,6 @@ select {
   padding: 10px 15px;
   border-radius: 4px;
   font-size: 16px;
-}
-
-html {
-  overflow-x: hidden;
-  font-size: 10px;
-}
-
-.logo-title {
-  display: flex;
-  flex-direction: row;
-}
-
-#f1Logo {
-  width: 350px;
-  display: block;
-}
-
-h1 {
-  display: block;
-  font-size: 4.8rem;
-  flex-shrink: 0;
-  align-self: flex-end;
 }
 
 p {
@@ -87,7 +69,7 @@ p {
 }
 
 .time {
-  color: #68777e;
+  color: #454646;
 }
 
 main {
@@ -132,7 +114,7 @@ main {
   justify-content: center;
   align-items: center;
   padding: 5px 10px;
-  background-color: #f3f3f3;
+  background-color: #ebebeb;
   border-radius: 20px;
   height: 300px;
 }
