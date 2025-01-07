@@ -69,7 +69,7 @@
   },
   {
     "id": "emilia-romagna",
-    "name": "Emilia-Romagna",
+    "name": "Emilia Romagna",
     "round": "7",
     "Race": { "start_day": "18May", "start_time": "TBC" },
     "Qualifying": { "start_day": "17May", "start_time": "TBC" },
