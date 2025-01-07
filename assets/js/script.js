@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", async () => {
           ${Object.keys(data)
             .map((key) => {
               if (data[key] instanceof Object) {
-                return createTime(data[key].start_time, key);
+                return createTime(data[key].start_day, data[key].start_time, key);
               }
             })
             .join("")}
@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 });
 
 const loadData = async () => {
-  const response = await fetch(`https://f1-calendar.eu.org/raw/2024.json`);
+  const response = await fetch(`https://f1-calendar.eu.org/raw/2025.json`);
   return await response.json();
 };
 
@@ -57,6 +57,15 @@ function createTime(timeUTC, event) {
         day: "numeric",
       })}</span>
       <span class='time'>${dateFormat(new Date(timeUTC), "HH:mm")}</span>
+    </p>`;
+}
+
+
+function createTime(startDay, startTime, event) {
+  return `<p class='time-line' data-event='${event}'>
+      <span class='event'>${event} :</span> 
+      <span class='day'>${startDay}</span>
+      <span class='time'>${startTime}</span>
     </p>`;
 }
 
