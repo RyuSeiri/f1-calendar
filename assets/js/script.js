@@ -14,13 +14,19 @@ document.addEventListener("DOMContentLoaded", async () => {
       </h3>
       <div class="race-content">
         <div class="race-image">
-          <img src="./assets/track-icons/${data.id}.png" alt="${data.name} Track" />
+          <img src="./assets/track-icons/${data.id}.png" alt="${
+        data.name
+      } Track" />
         </div>
         <div class="race-times">
           ${Object.keys(data)
             .map((key) => {
               if (data[key] instanceof Object) {
-                return createTime(data[key].start_day, data[key].start_time, key);
+                return createTime(
+                  data[key].start_day,
+                  data[key].start_time,
+                  key
+                );
               }
             })
             .join("")}
@@ -52,7 +58,7 @@ const loadData = async () => {
 function createTime(timeUTC, event) {
   return `<p class='time-line' data-event='${event}'>
       <span class='event'>${event} :</span> 
-      <span class='day'>${new Date(timeUTC).toLocaleDateString('en-US', {
+      <span class='day'>${new Date(timeUTC).toLocaleDateString("en-US", {
         month: "short",
         day: "numeric",
       })}</span>
@@ -60,12 +66,11 @@ function createTime(timeUTC, event) {
     </p>`;
 }
 
-
 function createTime(startDay, startTime, event) {
   return `<p class='time-line' data-event='${event}'>
       <span class='event'>${event} :</span> 
       <span class='day'>${startDay}</span>
-      <span class='time'>${startTime}</span>
+      <span class='time'>${dateFormat(new Date(startTime), "HH:mm")}</span>
     </p>`;
 }
 
