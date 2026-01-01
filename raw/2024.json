@@ -125,8 +125,8 @@
     }
   },
   {
-    "id": "miami",
-    "name": "Miami",
+    "id": "united-states",
+    "name": "United States",
     "round": "6",
     "race": {
       "start_time": "2024-05-05T20:00:00+00:00",
@@ -150,8 +150,8 @@
     }
   },
   {
-    "id": "emilia-romagna",
-    "name": "Emilia Romagna",
+    "id": "italy",
+    "name": "Italy",
     "round": "7",
     "race": {
       "start_time": "2024-05-19T13:00:00+00:00",
@@ -525,8 +525,8 @@
     }
   },
   {
-    "id": "las-vegas",
-    "name": "Las Vegas",
+    "id": "united-states",
+    "name": "United States",
     "round": "22",
     "race": {
       "start_time": "2024-11-24T06:00:00+00:00",
